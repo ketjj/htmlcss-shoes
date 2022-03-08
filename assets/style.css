@@ -4,17 +4,63 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto Mono', monospace;
 }
 
+
+/* NAVBAR */
+
+header{
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  z-index: 999;;
+  color: aliceblue;
+  text-align: right;
+  padding: 30px 10px;
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  line-height: 70px;
+  margin-right: 30px;
+}
+
+
+nav ul li a {
+  background-color: white;
+  border-radius: 50%;
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+
+
+a:active {
+  background-color: rgba(0, 0, 0, .5);
+}
+a:hover {
+  box-shadow: 2px 2px 5px black;
+}
+
+
+/* SECTIONS */
 
 .box { 
   position: relative;
   width: 100%;
   margin: 0 auto;
   height: 100vh;
-  background-color: blue;
+  overflow: hidden;
 }
 
 
@@ -23,7 +69,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 45%;
 }
 
 #shoe1 {
@@ -40,15 +86,19 @@ body {
 
 /* TEXT */
 
-h1 {
+.box h1  {
   position: absolute;
+  height: 10vh;
   top: 50%;
   left: 50%; 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 240%);
+  text-align: center;
   text-transform: uppercase;
   font-size: 50px;
+  font-weight: 800;
+
 }
-  
+
 .yellowtext {
   color: yellow;
 }
@@ -56,3 +106,4 @@ h1 {
 .greentext {
   color: green;
 }
+
