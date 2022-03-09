@@ -9,7 +9,8 @@ html {
 }
 
 body {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Rubik Mono One', sans-serif;
+  color: yellow;
 }
 
 
@@ -19,8 +20,7 @@ header{
   position: fixed;
   height: 70px;
   width: 100%;
-  z-index: 999;;
-  color: aliceblue;
+  z-index: 999;
   text-align: right;
   padding: 30px 10px;
 }
@@ -47,63 +47,54 @@ nav ul li a {
 
 a:active {
   background-color: rgba(0, 0, 0, .5);
+
 }
 a:hover {
   box-shadow: 2px 2px 5px black;
+
 }
 
 
 /* SECTIONS */
 
-.box { 
+
+/* Ieri, per sbaglio ho messo con il tag section il punto davanti. E non mi funzionava più niente, così ho improvisato. Oggi finalmente ho capito dove ho sbagliato e che devo essere sempre attenta :))) */
+
+
+section {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
   height: 100vh;
-  overflow: hidden;
 }
 
-
-.box img {
+.box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 45%;
+  text-align: center;
 }
 
-#shoe1 {
+.box img {
+  width: 100%;
+}
+
+.box .text {
+  font-size: 4vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#shoe-3 .text {
+  color: green;
+}
+#shoe-1 {
   background-color: red;
 }
 
-#shoe2 {
+#shoe-2 {
   background-color: green;
 }
 
-#shoe3 {
+#shoe-3 {
   background-color: yellow;
 }
-
-/* TEXT */
-
-.box h1  {
-  position: absolute;
-  height: 10vh;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%, 240%);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 800;
-
-}
-
-.yellowtext {
-  color: yellow;
-}
-
-.greentext {
-  color: green;
-}
-
